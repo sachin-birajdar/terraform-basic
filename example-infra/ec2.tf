@@ -12,5 +12,5 @@ tags = {
 
 output "private_ip" {
     value = aws_instance.Web.private_dns
-    value = aws_instance.Web.private_ip
+   
 }
