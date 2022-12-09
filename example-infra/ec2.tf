@@ -5,7 +5,7 @@ ami = "ami-02367f873ab738292"
 instance_type =  "t2.micro"
 
 tags = {
-    Name = "this is sample terraform instance"
+    Name = "terraform instance"
 }
 
 }
