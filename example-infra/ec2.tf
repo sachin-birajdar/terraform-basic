@@ -4,8 +4,6 @@ ami = "ami-02367f873ab738292"
 
 instance_type =  "t2.micro"
 
-  key = "b50"
-
 tags = {
     Name = "this is sample terraform instance"
 }
