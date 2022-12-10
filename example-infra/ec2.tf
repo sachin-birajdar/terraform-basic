@@ -2,7 +2,7 @@ resource "aws_instance" "Web" {
   
 ami = "ami-02367f873ab738292"
 
-instance_type =  "t2.micro"
+instance_type = "t2.micro"
 
 vpc_security_group_ids = [aws_security_group.allow_ssh.id]
 
@@ -18,7 +18,7 @@ output "private_ip" {
 }
 
 #create security group
-resource "aws_security_group" "allow_all" {
+resource "aws_security_group" "allow_ssh" {
   name        = "allow_ssh"
   description = "Allow SSH inbound traffic"
   
