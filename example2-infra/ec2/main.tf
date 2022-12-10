@@ -12,7 +12,7 @@ tags = {
 
 }
 
-variable "sg" {}
+#variable "sg" {}
 
 output "public_ip" {
   
