@@ -1,6 +1,6 @@
 #create security group
-resource "aws_security_group" "allow_ssh" {
-  name        = "allow_ssh"
+resource "aws_security_group" "allows_ssh" {
+  name        = "allows_ssh"
   description = "Allow SSH inbound traffic"
   
 
@@ -30,7 +30,7 @@ resource "aws_security_group" "allow_ssh" {
   }
 
   tags = {
-    Name = "allow_ssh"
+    Name = "allows_ssh"
   }
 }
 
@@ -38,5 +38,5 @@ resource "aws_security_group" "allow_ssh" {
 
 output "sgid" {
   
-  value = aws_security_group.allow_ssh.id
+  value = aws_security_group.allows_ssh.id
 }
