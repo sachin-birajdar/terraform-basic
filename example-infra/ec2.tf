@@ -19,9 +19,9 @@ output "private_ip" {
 
 #create security group
 resource "aws_security_group" "allow_all" {
-  name        = "allow_tls"
-  description = "Allow TLS inbound traffic"
-  
+  name        = "allow_ssh"
+  description = "Allow SSH inbound traffic"
+  vpc_id      = aws_vpc.main.id
 
   ingress {
     description      = "SSH from VPC"
