@@ -1,6 +1,6 @@
 resource "aws_instance" "app" {
   
-ami = data.aws_ami.myami.id
+ami = data.aws_ami.myami.image_id
 
 instance_type = "t2.micro"
 
